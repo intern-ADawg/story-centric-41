@@ -2,15 +2,18 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border animate-slide-in-right">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-heirloom-cream border-b border-border animate-slide-in-right">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center hover:scale-105 transition-transform duration-300">
+          <div className="flex items-center space-x-3 hover:scale-105 transition-transform duration-300">
             <img 
-              src="/lovable-uploads/74658322-9b7c-4a85-bcc3-00786a4f4067.png" 
-              alt="HEIRLOOM logo"
+              src="/lovable-uploads/99bc2a0c-5c24-4aba-b11b-28c876ca22c5.png" 
+              alt="Heirloom tomato logo"
               className="h-8 w-auto"
             />
+            <span className="font-display font-bold text-xl text-heirloom-charcoal tracking-wide">
+              Heirloom
+            </span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
