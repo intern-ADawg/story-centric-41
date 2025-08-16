@@ -11,7 +11,7 @@ const Header = () => {
               alt="Heirloom tomato logo"
               className="h-8 w-auto"
             />
-            <span className="font-display font-bold text-xl text-heirloom-charcoal tracking-wide">
+            <span className="font-display font-bold text-xl text-heirloom-charcoal tracking-wide bg-heirloom-cream px-2 py-1 rounded-full">
               Heirloom
             </span>
           </div>
