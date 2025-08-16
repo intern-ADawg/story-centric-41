@@ -1,8 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useState, useEffect } from "react";
 import heroImage from "@/assets/hero-cooking.jpg";
 
 const Hero = () => {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const rotatingWords = ["Emotion", "Memory", "Story", "Experience"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % rotatingWords.length);
+    }, 2000); // Change word every 2 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -23,9 +35,9 @@ const Hero = () => {
           </Badge>
           
           <h1 className="font-display font-bold text-5xl md:text-7xl text-white mb-6 leading-tight animate-fade-in [animation-delay:200ms]">
-            Every Recipe Tells a 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-heirloom-orange-light to-heirloom-orange animate-glow">
-              {" "}Story
+            From Kitchen to Heart: Every Recipe, Every{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-heirloom-orange-light to-heirloom-orange animate-glow transition-all duration-500">
+              {rotatingWords[currentWordIndex]}
             </span>
           </h1>
           
