@@ -36,7 +36,7 @@ const Hero = () => {
           
           <h1 className="font-display font-bold text-5xl md:text-7xl text-white mb-6 leading-tight animate-fade-in [animation-delay:200ms]">
             A Recipe for Every{" "}
-            <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-heirloom-orange-light to-heirloom-orange animate-glow transition-all duration-1000 ease-in-out transform">
+            <span className="inline-block font-cursive font-semibold text-6xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-heirloom-orange-light to-heirloom-orange animate-glow transition-all duration-1000 ease-in-out transform">
               {rotatingWords[currentWordIndex]}
             </span>
           </h1>
