@@ -10,7 +10,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentWordIndex((prevIndex) => (prevIndex + 1) % rotatingWords.length);
-    }, 2000); // Change word every 2 seconds
+    }, 4000); // Change word every 4 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -35,8 +35,8 @@ const Hero = () => {
           </Badge>
           
           <h1 className="font-display font-bold text-5xl md:text-7xl text-white mb-6 leading-tight animate-fade-in [animation-delay:200ms]">
-            From Kitchen to Heart: Every Recipe, Every{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-heirloom-orange-light to-heirloom-orange animate-glow transition-all duration-500">
+            A Recipe for Every{" "}
+            <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-heirloom-orange-light to-heirloom-orange animate-glow transition-all duration-1000 ease-in-out transform">
               {rotatingWords[currentWordIndex]}
             </span>
           </h1>
